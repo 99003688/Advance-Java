@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Team Registration</title>
+<style>
+ .myDiv {
+        border: 4px outset red;
+        background-color: DodgerBlue;
+        text-align: center;
+        width: 50%;
+        margin-left: 20%
+       }
+ .mydiv2{
+         border: 4px outset red;
+         background-color: lightblue;
+         text-align: center;
+         width: 50%;
+         margin-left: 20%
+        }
+ .mydiv3{
+         border: 4px outset red;
+         background-color: DodgerBlue;
+         text-align: center;
+         width: 50%;
+         margin-left: 20%
+        }
+</style>
+</head>
+<body>
+<form action="./InsertTeamServlet" method="post">
+
+  <div class="myDiv">
+    <h2>Team Details</h2>
+  </div>
+  <br>
+  <div class= "myDiv">
+  <table margin-left: 30%;>
+       <tr><td><label for ="fid"> Team ID:</label></td>
+      <td><input type="number" name="teamId" autofocus required= required placeholder="Enter your team Id"></td>
+      </tr>
+      
+      <tr><td><label for ="fteamname"> Team Name:</label></td>
+      <td><input type="text" name="teamname" autofocus required= required placeholder="Enter your team name"></td>
+      </tr>
+           
+      <tr><td><label for ="fownername"> Owner Name:</label></td>
+      <td><input type="text" name="ownerName" autofocus required= required placeholder="Enter your owner name"></td>
+      </tr>
+      
+      <tr><td> <label for="fcoachname ">Coach Name:</label></td>
+     <td> <input type="text" id="coachName" name="coachName" autofocus required= required  placeholder="Enter your coach name"></td>
+     </tr>
+     
+     <tr><td><label for ="fid">  Player ID:</label></td>
+      <td><input type="number" name="playerId" autofocus required= required placeholder="Enter your Player Id"></td>
+      </tr>
+      </table>
+      <br>
+      <br>
+       <div class= "myDiv">
+      <tr><td> <input type="submit" value="submit"></td></tr>
+      </div>
+      
+   </div>
+</form>
+
+</body>
+</html>

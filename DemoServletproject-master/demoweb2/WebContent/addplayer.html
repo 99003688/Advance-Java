@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Player Registration</title>
+<style>
+ .myDiv {
+        border: 4px outset red;
+        background-color: DodgerBlue;
+        text-align: center;
+        width: 50%;
+        margin-left: 20%
+       }
+ .mydiv2{
+         border: 4px outset red;
+         background-color: lightblue;
+         text-align: center;
+         width: 50%;
+         margin-left: 20%
+        }
+ .mydiv3{
+         border: 4px outset red;
+         background-color: DodgerBlue;
+         text-align: center;
+         width: 50%;
+         margin-left: 20%
+        }
+</style>
+</head>
+<body>
+<form action="./InsertPlayerServlet" method="post">
+
+  <div class="myDiv">
+    <h2>Player Details</h2>
+  </div>
+  <br>
+  <div class= "myDiv">
+  <table margin-left: 30%;>
+       <tr><td><label for ="fid"> Player ID:</label></td>
+      <td><input type="number" name="playerId" autofocus required= required placeholder="Enter your Player Id"></td>
+      </tr>
+      
+      <tr><td><label for ="fname"> Name:</label></td>
+      <td><input type="text" name="playerName" autofocus required= required placeholder="Enter your name"></td>
+      </tr>
+           
+      <tr><td><label for ="fcountry"> Country:</label></td>
+      <td><input type="text" name="country" autofocus required= required placeholder="Enter your Country"></td>
+      </tr>
+      
+      <tr><td> <label for="date of birth">Birthday:</label></td>
+     <td> <input type="text" id="birthday" name="sDate1" autofocus required= required  placeholder="Enter your Birth-DaTe"></td>
+     </tr>
+      </table>
+      <br>
+      <br>
+       <div class= "myDiv">
+      <tr><td> <input type="submit" value="submit"></td></tr>
+      </div>
+      
+   </div>
+</form>
+</body>
+</html>
